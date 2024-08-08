@@ -13,12 +13,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteUser = exports.updateUser = exports.getUser = exports.loginUser = exports.registerUser = void 0;
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const users_model_1 = __importDefault(require("../models/mysql/users.model"));
 const registerUser = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const { username, email, password } = req.body;
-    const hashedPassword = yield bcrypt_1.default.hash(password, 10);
+    const hashedPassword = yield bcryptjs_1.default.hash(password, 10);
     try {
         let userExist = (yield users_model_1.default.findOne({ where: { username } })) || (yield users_model_1.default.findOne({ where: { email } }));
         if ((userExist === null || userExist === void 0 ? void 0 : userExist.dataValues.username) === username) {
@@ -45,7 +45,7 @@ const loginUser = (req, res, next) => __awaiter(void 0, void 0, void 0, function
         return res.status(400).json({ msg: `The user with username ${username} doesn't exist` });
     }
     try {
-        const passwordValid = yield bcrypt_1.default.compare(password, userExist.password);
+        const passwordValid = yield bcryptjs_1.default.compare(password, userExist.password);
         if (!passwordValid) {
             return res.status(400).json({ msg: `The password is invalid` });
         }
