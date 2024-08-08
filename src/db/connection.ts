@@ -1,11 +1,11 @@
-import { Sequelize} from "sequelize";
+import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize(process.env.DB_DATABASE || 'railway', 'root', {
+const sequelize = new Sequelize('railway', 'root', {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
-    username: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'dKuvKxKSzQrFGEsrcFmJpLxqdzFwwWFl',
-    database: process.env.DB_DATABASE || 'railway',
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
     dialect: 'mysql'
 })
 

@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const sequelize = new sequelize_1.Sequelize(process.env.DB_DATABASE || 'railway', 'root', {
+const sequelize = new sequelize_1.Sequelize('railway', 'root', {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
-    username: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'dKuvKxKSzQrFGEsrcFmJpLxqdzFwwWFl',
-    database: process.env.DB_DATABASE || 'railway',
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
     dialect: 'mysql'
 });
 exports.default = sequelize;
