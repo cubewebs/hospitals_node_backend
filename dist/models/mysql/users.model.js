@@ -68,6 +68,6 @@ const User = connection_1.default.define('user', {
     }
 }, {
     createdAt: false,
-    updatedAt: false
+    updatedAt: false,
 });
 exports.default = User;

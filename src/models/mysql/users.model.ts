@@ -64,7 +64,7 @@ const User = db.define('user', {
     }
 }, {
     createdAt: false,
-    updatedAt: false
+    updatedAt: false,
 });
 
 export default User;
