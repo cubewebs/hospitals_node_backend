@@ -15,7 +15,7 @@ export default class Server {
     constructor() {
         this.app = express();
         this.middlewares();
-        this.PORT = process.env.PORT ?? '3001';
+        this.PORT = process.env.PORT ?? '8080';
         this.routes();
         this.dbConnect();
     }

@@ -26,7 +26,7 @@ class Server {
         var _a;
         this.app = (0, express_1.default)();
         this.middlewares();
-        this.PORT = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : '3001';
+        this.PORT = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : '8080';
         this.routes();
         this.dbConnect();
     }
