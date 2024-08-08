@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const sequelize: Sequelize = new Sequelize('railway', 'root', 'dKuvKxKSzQrFGEsrcFmJpLxqdzFwwWFl', {
+const sequelize: Sequelize = new Sequelize('railway', 'root', 'ehqXzgWqwxbfJWleeMHtbKounaSajIkJ', {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
     username: process.env.DB_USER,

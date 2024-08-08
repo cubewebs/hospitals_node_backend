@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const sequelize = new sequelize_1.Sequelize('railway', 'root', 'dKuvKxKSzQrFGEsrcFmJpLxqdzFwwWFl', {
+const sequelize = new sequelize_1.Sequelize('hospitals_db', 'root', '', {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
     username: process.env.DB_USER,
