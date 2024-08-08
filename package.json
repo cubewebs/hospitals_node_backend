@@ -4,10 +4,10 @@
   "description": "Hopitals webapp backend with nodejs and express",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon dist/app.js",
-    "tsc": "tsc -w",
     "build": "tsc",
     "start": "node dist/app.js",
+    "dev": "nodemon dist/app.js",
+    "tsc": "tsc -w",
     "test": "npm run test"
   },
   "keywords": [
