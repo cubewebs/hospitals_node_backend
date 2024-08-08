@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:4200/hospitals -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module" src="./Frontend_files/client"></script>
+
+  
+  <title>Frontend</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./Frontend_files/styles.css"><style>@layer primeng{.p-menubar{display:flex;align-items:center}.p-menubar ul{margin:0;padding:0;list-style:none}.p-menubar .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-menubar .p-menuitem-text{line-height:1}.p-menubar .p-menuitem{position:relative}.p-menubar-root-list{display:flex;align-items:center;flex-wrap:wrap}.p-menubar-root-list>li ul{display:none;z-index:1}.p-menubar-root-list>.p-menuitem-active>p-menubarsub>.p-submenu-list{display:block}.p-menubar .p-submenu-list{display:none;position:absolute;z-index:2}.p-menubar .p-submenu-list>.p-menuitem-active>p-menubarsub>.p-submenu-list{display:block;left:100%;top:0}.p-menubar .p-submenu-list .p-menuitem-link .p-submenu-icon:not(svg){margin-left:auto}.p-menubar .p-menubar-root-list .p-icon-wrapper,.p-menubar .p-submenu-list .p-menuitem-link .p-icon-wrapper{margin-left:auto}.p-menubar .p-menubar-custom,.p-menubar .p-menubar-end{margin-left:auto;align-self:center}.p-menubar-button{display:none;cursor:pointer;align-items:center;justify-content:center}}
+</style><style>@layer primeng{.p-menu-overlay{position:absolute;top:0;left:0}.p-menu ul{margin:0;padding:0;list-style:none}.p-menu .p-submenu-header{align-items:center}.p-menu .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-menu .p-menuitem-text{line-height:1}}
+</style><style>@layer primeng{.p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{display:flex;align-items:flex-start}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{top:20px;right:20px}.p-toast-top-left{top:20px;left:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{top:20px;left:50%;transform:translate(-50%)}.p-toast-bottom-center{bottom:20px;left:50%;transform:translate(-50%)}.p-toast-center{left:50%;top:50%;min-width:20vw;transform:translate(-50%,-50%)}.p-toast-icon-close{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;flex:none}.p-toast-icon-close.p-link{cursor:pointer}}
+</style><style>
+
+.cover[_ngcontent-ng-c2150835737] {
+  object-fit: cover;
+}
+/*# sourceMappingURL=list-hospitals.component.css.map */</style><style>@layer primeng{.p-dataview{position:relative}.p-dataview .p-dataview-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:2}}
+</style><style>@layer primeng{.p-dialog-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dialog-mask.p-component-overlay{pointer-events:auto}.p-dialog{display:flex;flex-direction:column;pointer-events:auto;max-height:90%;transform:scale(1);position:relative}.p-dialog-content{overflow-y:auto;flex-grow:1}.p-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.p-dialog-draggable .p-dialog-header{cursor:move}.p-dialog-footer{flex-shrink:0}.p-dialog .p-dialog-header-icons{display:flex;align-items:center}.p-dialog .p-dialog-header-icon{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-fluid .p-dialog-footer .p-button{width:auto}.p-dialog-top .p-dialog,.p-dialog-bottom .p-dialog,.p-dialog-left .p-dialog,.p-dialog-right .p-dialog,.p-dialog-top-left .p-dialog,.p-dialog-top-right .p-dialog,.p-dialog-bottom-left .p-dialog,.p-dialog-bottom-right .p-dialog{margin:.75rem;transform:translateZ(0)}.p-dialog-maximized{-webkit-transition:none;transition:none;transform:none;width:100vw!important;height:100vh!important;top:0!important;left:0!important;max-height:100%;height:100%}.p-dialog-maximized .p-dialog-content{flex-grow:1}.p-dialog-left{justify-content:flex-start}.p-dialog-right{justify-content:flex-end}.p-dialog-top{align-items:flex-start}.p-dialog-top-left{justify-content:flex-start;align-items:flex-start}.p-dialog-top-right{justify-content:flex-end;align-items:flex-start}.p-dialog-bottom{align-items:flex-end}.p-dialog-bottom-left{justify-content:flex-start;align-items:flex-end}.p-dialog-bottom-right{justify-content:flex-end;align-items:flex-end}.p-dialog .p-resizable-handle{position:absolute;font-size:.1px;display:block;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.p-confirm-dialog .p-dialog-content{display:flex;align-items:center}}
+</style></head>
+<body>
+  <app-root _nghost-ng-c3635270428="" ng-version="18.0.6"><div _ngcontent-ng-c3635270428="" class="flex flex-column"><div _ngcontent-ng-c3635270428="" class="m-0 p-0"><app-navbar _ngcontent-ng-c3635270428="" _nghost-ng-c2096832178=""><div _ngcontent-ng-c2096832178="" class="card"><p-menubar _ngcontent-ng-c2096832178="" class="p-element" ng-reflect-model="[object Object],[object Object"><div ng-reflect-ng-class="[object Object]" data-pc-section="root" data-pc-name="menubar" class="p-menubar p-component"><div class="p-menubar-start"><svg _ngcontent-ng-c2096832178="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" zoomAndPan="magnify" viewBox="0 0 600 599.999999" height="60" preserveAspectRatio="xMidYMid meet" version="1.0"><path _ngcontent-ng-c2096832178="" fill="#3178c6" d="M 299.96875 299.96875 L 60 299.96875 C 60 167.4375 167.4375 60 299.96875 60 Z M 299.96875 299.96875 L 299.96875 539.9375 C 432.5 539.9375 539.9375 432.5 539.9375 299.96875 Z M 132.25 355.722656 C 101.886719 386.085938 101.886719 435.3125 132.25 465.675781 C 162.609375 496.039062 211.839844 496.039062 242.203125 465.675781 C 272.566406 435.3125 272.566406 386.085938 242.203125 355.722656 C 211.835938 325.359375 162.609375 325.359375 132.25 355.722656 Z M 469.546875 234.960938 C 499.910156 204.597656 499.910156 155.371094 469.546875 125.007812 C 439.183594 94.644531 389.957031 94.644531 359.59375 125.007812 C 329.230469 155.371094 329.230469 204.597656 359.59375 234.960938 C 389.957031 265.324219 439.183594 265.324219 469.546875 234.960938 Z M 469.546875 234.960938 " fill-opacity="1" fill-rule="nonzero"></path></svg><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--><a tabindex="0" role="button" class="p-menubar-button" aria-haspopup="true" aria-controls="pn_id_1" aria-label="Navigation" data-pc-section="button"><barsicon class="p-element p-icon-wrapper"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.3226 3.6129H0.677419C0.497757 3.6129 0.325452 3.54152 0.198411 3.41448C0.0713707 3.28744 0 3.11514 0 2.93548C0 2.75581 0.0713707 2.58351 0.198411 2.45647C0.325452 2.32943 0.497757 2.25806 0.677419 2.25806H13.3226C13.5022 2.25806 13.6745 2.32943 13.8016 2.45647C13.9286 2.58351 14 2.75581 14 2.93548C14 3.11514 13.9286 3.28744 13.8016 3.41448C13.6745 3.54152 13.5022 3.6129 13.3226 3.6129ZM13.3226 7.67741H0.677419C0.497757 7.67741 0.325452 7.60604 0.198411 7.479C0.0713707 7.35196 0 7.17965 0 6.99999C0 6.82033 0.0713707 6.64802 0.198411 6.52098C0.325452 6.39394 0.497757 6.32257 0.677419 6.32257H13.3226C13.5022 6.32257 13.6745 6.39394 13.8016 6.52098C13.9286 6.64802 14 6.82033 14 6.99999C14 7.17965 13.9286 7.35196 13.8016 7.479C13.6745 7.60604 13.5022 7.67741 13.3226 7.67741ZM0.677419 11.7419H13.3226C13.5022 11.7419 13.6745 11.6706 13.8016 11.5435C13.9286 11.4165 14 11.2442 14 11.0645C14 10.8848 13.9286 10.7125 13.8016 10.5855C13.6745 10.4585 13.5022 10.3871 13.3226 10.3871H0.677419C0.497757 10.3871 0.325452 10.4585 0.198411 10.5855C0.0713707 10.7125 0 10.8848 0 11.0645C0 11.2442 0.0713707 11.4165 0.198411 11.5435C0.325452 11.6706 0.497757 11.7419 0.677419 11.7419Z" fill="currentColor"></path></svg></barsicon><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={}--></a><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><p-menubarsub class="p-element" ng-reflect-items="[object Object],[object Object" ng-reflect-item-template="[object Object]" ng-reflect-menu-id="pn_id_1" ng-reflect-root="true" ng-reflect-base-z-index="0" ng-reflect-auto-z-index="true" ng-reflect-auto-display="true" ng-reflect-active-item-path=""><ul role="menubar" ng-reflect-ng-class="[object Object]" tabindex="0" data-pc-section="menu" id="pn_id_1" class="p-menubar-root-list"><!--bindings={}--><li role="menuitem" ptooltip="" class="p-element p-menuitem" ng-reflect-content="" ng-reflect-ng-class="[object Object]" id="pn_id_1_0" data-pc-section="menuitem" data-p-highlight="false" data-p-focused="false" aria-label="Home" aria-level="1" aria-setsize="2" aria-posinset="1"><div class="p-menuitem-content" data-pc-section="content"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><a _ngcontent-ng-c2096832178="" pripple="" class="p-ripple p-element flex align-items-center p-menuitem-link" ng-reflect-router-link="home" href="http://localhost:4200/home"><span _ngcontent-ng-c2096832178="" class="pi pi-home"></span><span _ngcontent-ng-c2096832178="" class="ml-2">Home</span><!--bindings={}--><!--bindings={}--><!--bindings={}--></a><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></li><!--container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={}--><li role="menuitem" ptooltip="" class="p-element p-menuitem" ng-reflect-content="" ng-reflect-ng-class="[object Object]" id="pn_id_1_1" data-pc-section="menuitem" data-p-highlight="false" data-p-focused="false" aria-label="Hospitals" aria-haspopup="menu" aria-expanded="false" aria-level="1" aria-setsize="2" aria-posinset="2"><div class="p-menuitem-content" data-pc-section="content"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><a _ngcontent-ng-c2096832178="" pripple="" class="p-ripple p-element flex align-items-center p-menuitem-link"><span _ngcontent-ng-c2096832178="" class="pi pi-building"></span><span _ngcontent-ng-c2096832178="" class="ml-2">Hospitals</span><!--bindings={}--><!--bindings={}--><i _ngcontent-ng-c2096832178="" ng-reflect-ng-class="pi,pi-angle-down ml-2" class="pi pi-angle-down ml-2"></i><!--bindings={
+  "ng-reflect-ng-if": "[object Object],[object Object"
+}--></a><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></div><p-menubarsub class="p-element" ng-reflect-item-template="[object Object]" ng-reflect-items="[object Object],[object Object" ng-reflect-mobile-active="false" ng-reflect-auto-display="true" ng-reflect-menu-id="pn_id_1" ng-reflect-active-item-path="" ng-reflect-level="1" ng-reflect-aria-labelled-by="pn_id_1_1_label"><ul role="menubar" ng-reflect-ng-class="[object Object]" tabindex="0" data-pc-section="menu" aria-labelledby="pn_id_1_1_label" class="p-submenu-list"><!--bindings={}--><li role="menuitem" ptooltip="" class="p-element p-menuitem" ng-reflect-content="" ng-reflect-ng-class="[object Object]" id="pn_id_1_1_0" data-pc-section="menuitem" data-p-highlight="false" data-p-focused="false" aria-label="List" aria-level="2" aria-setsize="2" aria-posinset="1"><div class="p-menuitem-content" data-pc-section="content"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><a _ngcontent-ng-c2096832178="" pripple="" class="p-ripple p-element flex align-items-center p-menuitem-link" ng-reflect-router-link="hospitals" href="http://localhost:4200/hospitals"><span _ngcontent-ng-c2096832178="" class="pi pi-list"></span><span _ngcontent-ng-c2096832178="" class="ml-2">List</span><!--bindings={}--><!--bindings={}--><!--bindings={}--></a><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></li><!--container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={}--><li role="menuitem" ptooltip="" class="p-element p-menuitem" ng-reflect-content="" ng-reflect-ng-class="[object Object]" id="pn_id_1_1_1" data-pc-section="menuitem" data-p-highlight="false" data-p-focused="false" aria-label="Add New" aria-level="2" aria-setsize="2" aria-posinset="2"><div class="p-menuitem-content" data-pc-section="content"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><a _ngcontent-ng-c2096832178="" pripple="" class="p-ripple p-element flex align-items-center p-menuitem-link" ng-reflect-router-link="hospitals/add" href="http://localhost:4200/hospitals/add"><span _ngcontent-ng-c2096832178="" class="pi pi-server"></span><span _ngcontent-ng-c2096832178="" class="ml-2">Add New</span><!--bindings={}--><!--bindings={}--><!--bindings={}--></a><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></li><!--container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></ul></p-menubarsub><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></li><!--container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></ul></p-menubarsub><div class="p-menubar-end"><div _ngcontent-ng-c2096832178="" class="flex justify-content-center gap-2"><div _ngcontent-ng-c2096832178="" class="card flex justify-content-center"><p-menu _ngcontent-ng-c2096832178="" class="p-element ng-tns-c1854380517-0" ng-reflect-model="[object Object]" ng-reflect-popup="true"><!--bindings={}--></p-menu><div _ngcontent-ng-c2096832178="" class="flex"><!--bindings={
+  "ng-reflect-ng-if": null
+}--><div _ngcontent-ng-c2096832178="" class="flex flex-column justify-content-center"><!--bindings={
+  "ng-reflect-ng-if": null
+}--><!--bindings={
+  "ng-reflect-ng-if": null
+}--></div></div></div><!--bindings={
+  "ng-reflect-ng-if": null
+}--><p-button _ngcontent-ng-c2096832178="" type="button" label="Login" routerlink="/auth/login" icon="pi pi-sign-in" iconpos="right" class="p-element" ng-reflect-type="button" ng-reflect-label="Login" ng-reflect-icon="pi pi-sign-in" ng-reflect-icon-pos="right" tabindex="0" ng-reflect-router-link="/auth/login"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span ng-reflect-ng-class="[object Object]" data-pc-section="icon" class="p-button-icon p-button-icon-right pi pi-sign-in"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label" aria-hidden="false" data-pc-section="label">Login</span><!--bindings={
+  "ng-reflect-ng-if": "Login"
+}--><!--bindings={}--></button></p-button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></div><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-if-else": "[object Object]"
+}--><!--container--></div></p-menubar></div></app-navbar></div><div _ngcontent-ng-c3635270428=""><router-outlet _ngcontent-ng-c3635270428=""></router-outlet><app-list-hospitals _nghost-ng-c2150835737="" class="ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="card"><p-dataview _ngcontent-ng-c2150835737="" class="p-element" ng-reflect-value="[object Object],[object Object"><div ng-reflect-ng-class="[object Object]" class="p-dataview p-component p-dataview-list"><!--bindings={}--><!--bindings={}--><!--bindings={}--><div class="p-dataview-content"><div _ngcontent-ng-c2150835737="" class="grid grid-nogutter ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/b0eb7653-6cdd-46bb-b35b-2e62aec05b33.jpg" alt="Topgun Hospital"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 1</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Topgun Hospital</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Military Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">492 Lincoln St. Virginia Beach, VA</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/1"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/f5bdbcda-257b-4844-a96c-26ac9180e402.jpg" alt="Quiron"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 2</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Quiron</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: category-2</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">121 Lincoln St. Virginia Beach, VA</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/2"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/c6dc7cce-418d-4567-a4a3-3a96742ff895.jpg" alt="Sagrario Maternity"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 3</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Sagrario Maternity</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Rural Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">112 Glassgow st. Boston, MA</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/3"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/f3f931fc-9f6d-4e11-a9a5-ee5182d97fcd.jpg" alt="Hospital Candelaria"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 10</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Hospital Candelaria</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Category 3</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">22 Cruz de Candelaria st. Candelaria, Tenerife</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/10"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/48c28d20-ef40-47d0-b668-09327a7d4d1a.jpg" alt="Canada University Hospital"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 15</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Canada University Hospital</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Category 1</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">65 Ontario st, Ontario, Canada</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/15"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/43f1b045-ca2d-403f-a220-7948c071e17c.jpg" alt="Shore Hospital"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 34</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Shore Hospital</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Psychiatric Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">788 Dingle st, Miami, FL</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/34"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/a96754d7-adeb-4e8e-a087-486c18715b59.jpg" alt="Hospital Español Sagrado"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 36</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Hospital Español Sagrado</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: General Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">Calle La Loma 24, Santa Cruz de Tenerife, Tenerife</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/36"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/00c1f526-6e5c-409e-add1-228bbdd2c585.jpg" alt="Cambridge Hospital"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 37</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Cambridge Hospital</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: Teaching Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">658 Cambridge st. Los Angeles, CA</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/37"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><div _ngcontent-ng-c2150835737="" class="col-12 ng-star-inserted"><div _ngcontent-ng-c2150835737="" class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 border-top-1 surface-border" ng-reflect-ng-class="[object Object]"><div _ngcontent-ng-c2150835737="" class="md:w-10rem relative"><img _ngcontent-ng-c2150835737="" class="block xl:block mx-auto border-round w-full cover" src="./Frontend_files/bf3b9faa-496e-47c9-b426-0062ffc8ef2b.jpg" alt="Hospital Central"></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"><div _ngcontent-ng-c2150835737="" class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"><div _ngcontent-ng-c2150835737=""><span _ngcontent-ng-c2150835737="" class="font-medium text-secondary text-sm">ID: 38</span><div _ngcontent-ng-c2150835737="" class="text-lg font-medium text-900 mt-2">Hospital Central</div></div><div _ngcontent-ng-c2150835737="" class="surface-100 p-1" style="border-radius: 30px;"><div _ngcontent-ng-c2150835737="" class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);"><small _ngcontent-ng-c2150835737="" class="text-blue-600 font-bold">category: General Hospitals</small></div></div></div><div _ngcontent-ng-c2150835737="" class="flex flex-column md:align-items-end gap-5"><span _ngcontent-ng-c2150835737="" class="text-xl font-semibold text-900">123 Central st. Oklahoma</span><div _ngcontent-ng-c2150835737="" class="flex flex-row-reverse md:flex-row gap-2"><p-button _ngcontent-ng-c2150835737="" label="Edit" pripple="" class="p-element p-ripple" ng-reflect-label="Edit" tabindex="0" ng-reflect-router-link="/hospitals/edit/38"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Edit</span><!--bindings={
+  "ng-reflect-ng-if": "Edit"
+}--><!--bindings={}--></button></p-button><p-button _ngcontent-ng-c2150835737="" type="button" severity="danger" label="Delete" pripple="" class="p-element p-ripple" ng-reflect-type="button" ng-reflect-severity="danger" ng-reflect-label="Delete"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-danger" ng-reflect-ng-class="[object Object]" type="button" data-pc-name="button" data-pc-section="root"><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={}--><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--ng-container--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span class="p-button-label ng-star-inserted" data-pc-section="label">Delete</span><!--bindings={
+  "ng-reflect-ng-if": "Delete"
+}--><!--bindings={}--></button></p-button></div></div></div></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div><!--bindings={
+  "ng-reflect-ng-template-outlet-context": "[object Object]"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><!--bindings={}--><!--bindings={}--></div></p-dataview></div><p-toast _ngcontent-ng-c2150835737="" class="p-element ng-tns-c1067615279-4 ng-star-inserted"><div class="p-toast p-component ng-tns-c1067615279-4 p-toast-top-right" ng-reflect-ng-class="p-toast-top-right"><!--bindings={}--></div></p-toast><p-confirmdialog _ngcontent-ng-c2150835737="" class="p-element ng-tns-c3962434685-5 ng-star-inserted"><!--bindings={}--></p-confirmdialog></app-list-hospitals><!--container--></div></div></app-root>
+<script src="./Frontend_files/polyfills.js" type="module"></script><script src="./Frontend_files/main.js" type="module"></script>
+
+</body></html>
