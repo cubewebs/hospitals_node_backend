@@ -1,6 +1,5 @@
 import express from "express";
 import {deleteUser, getUser, loginUser, registerUser, updateUser} from "../controllers/users.controller";
-import {uploadFiles} from "../controllers/uploads.controller";
 
 const router = express.Router();
 
